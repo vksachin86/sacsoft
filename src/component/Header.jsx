@@ -21,8 +21,8 @@ function Header({ text, bgcolour, textcolor }) {
 
 Header.defaultProps = {
     text: 'Feedback UI',
-    bgcolour: "rgb(38 21 135)",
-    textcolor: "red"
+    bgColor: 'rgba(0,0,0,0.4)',
+  textColor: '#ff6a95',
 }
 Header.propTypes = {
     text: PropTypes.string,

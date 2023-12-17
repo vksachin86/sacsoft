@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 4px;
 }
 
 body {
@@ -33,7 +33,7 @@ header {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #f0b4b4;
   color: #333;
   border-radius: 15px;
   padding: 40px 50px;
@@ -70,7 +70,7 @@ header {
   border-radius: 50%;
   font-size: 19px;
   border: 1px #eee solid;
-  transition: 0.3s;
+  transition: 0.3s;  
 }
 
 .rating li label {

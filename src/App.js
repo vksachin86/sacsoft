@@ -6,11 +6,10 @@ import Feedbackbackitem from "./component/Feedbackbackitem"
 function App() {
     return (
         <>
-        <Header />
-        <Feedbackbackitem/>
-        <div className="container">
-            <h1>My App</h1>
-        </div>
+            <Header />
+            <div className="container">
+                <Feedbackbackitem />
+            </div>
         </>
     )
 }
