@@ -1,27 +1,27 @@
 import React from 'react'
 import Feedbackitem from './Feedbackitem'
-import PropTypes  from 'prop-types'
+import PropTypes from 'prop-types'
 
 
-function FeedbackList( {feedback}) {
-    if (!feedback || feedback.length === 0){
+function FeedbackList({ feedback, handleDelete }) {
+    if (!feedback || feedback.length === 0) {
         return <p>No Feedback Yet </p>
     }
-  return (
-    <div className='feedback-list'>
-        {feedback.map((item) => (
-            <Feedbackitem key={item.id} item={item}/>
-        ))}
-    </div>
-  )
+    return (
+        <div className='feedback-list'>
+            {feedback.map((item) => (
+                <Feedbackitem key={item.id} item={item} handleDelete={handleDelete} />
+            ))}
+        </div>
+    )
 }
 
-FeedbackList.propTypes={
-    feedback:PropTypes.arrayOf(
+FeedbackList.propTypes = {
+    feedback: PropTypes.arrayOf(
         PropTypes.shape({
-            id:PropTypes.number.isRequired,
-            text:PropTypes.string.isRequired,
-            rating:PropTypes.number.isRequired
+            id: PropTypes.number.isRequired,
+            text: PropTypes.string.isRequired,
+            rating: PropTypes.number.isRequired
         })
     )
 }
