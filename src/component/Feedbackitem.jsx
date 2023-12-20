@@ -4,10 +4,7 @@ import PropTypes from 'prop-types'
 import { FaTimes } from 'react-icons/fa'
 
 function Feedbackitem({ item, handleDelete }) {
-    const handleClick = (id) => {
-        console.log()
-
-    }
+    
     return (
         <Card>
             <div className='num-display'>{item.rating}</div>
